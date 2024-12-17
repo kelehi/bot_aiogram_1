@@ -20,7 +20,7 @@ keyboard = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text='профиль')]
 @dp.message(CommandStart())
 async def start_bot(message: Message):
     dp.include_router(router)
-    await message.answer("Привет", reply_markup=keyboard)
+    await message.answer("Привет!", reply_markup=keyboard)
 
 
 async def main():
